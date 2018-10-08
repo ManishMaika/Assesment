@@ -1,0 +1,44 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+   
+</head>
+    
+    <body>
+<div>
+<table class="myTable" style="width:100px;"  >
+        <tbody id="applyTable"> 
+            
+            <tr>
+                
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            
+            <tr>
+                
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            
+            </tr>
+        </tbody>
+</table>
+</div>
+<div > 
+<input type="button" value="Add row"  onclick="addRow()" /><br/><br/>
+</div>
+    </body>
+
+
+</html>
+
+<script>
+
+   var indexValue = 0;
+   function addRow(){
+        var test ='<tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>';
+        $("#applyTable").append(test);
+        }
+</script>
